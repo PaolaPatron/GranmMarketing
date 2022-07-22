@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F5F5F5;
+    height: 93px;
+}
+
+.hero {
+    margin: 10%;
+}
+
+.hero-title {
+    font-family: 'Contrail One', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 120.19px;
+}
+
+
+p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 32px;
+    color: #2D2D2D;
+}
+
+
+.container-button {
+    margin-top: 10%;
+}
+
+.button {
+    border-radius: 16px;
+    background-color: #B89869;
+    color: white;
+    text-decoration: none;
+    padding: 16px 62px;
+    gap: 8px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.servicios-h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: 200;
+    font-size: 65px;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    border-radius: 30px;
+    padding: 50px 15px 30px 15px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.card-img-top {
+   width: 80px;
+   position: absolute;
+   top: -40px;
+ 
+}
+
+.card-title {
+    font-family: 'Contrail One', cursive;
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    
+}
+
+.card-text {
+    font-family: 'Lato';
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.servicios-title {
+    width: 100%;
+ }
