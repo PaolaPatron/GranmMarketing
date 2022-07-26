@@ -3,95 +3,460 @@
     padding: 0;
 }
 
-header {
-    background-color: #F5F5F5;
-    height: 93px;
+/*HEADER*/
+
+/*Color del Navbar*/
+.nav-bg {
+    background-color: rgba(251, 251, 251, 1)
 }
 
-.hero {
-    margin: 10%;
+/*Logo*/
+.img-logo {
+    width: 4.33em;
+    height: 3.833em;
+    top: 0.667em
 }
 
-.hero-title {
-    font-family: 'Contrail One', cursive;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 120.19px;
-}
-
-
-p {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 20px;
-    line-height: 32px;
-    color: #2D2D2D;
-}
-
-
-.container-button {
-    margin-top: 10%;
-}
-
-.button {
-    border-radius: 16px;
-    background-color: #B89869;
-    color: white;
-    text-decoration: none;
-    padding: 16px 62px;
-    gap: 8px;
+/*Items Navbar*/
+.link-style {
+    padding: 0.75em 1em;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    color: #2D2D2D;
+    margin-left: 2em;
+}
+
+/*Botón de Whatsapp en Desktop*/
+.whatsapp-button {
+    /*Colores*/
+    background-color: #25D366;
+    box-shadow: 0px 0.5em 2em rgba(37, 211, 102, 0.25);
+    color: #FBFBFB;
+    border: none;
+    /*Forma*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6em;
+    gap: 0.5em;
+    width: 282px;
+    height: 51.24px;
+    border-radius: 1.5em;
+    /*Fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1em;
+}
+
+/*Esconde botón de Whatsapp cuando colapsa el Navbar*/
+@media (max-width: 992px) {
+    .whatsapp-button {
+        display: none;
+    }
+}
+
+/*Botón Whatsapp en Modo Responsive*/
+.whatsapp-responsive {
+    background-color: #25D366;
+    box-shadow: 0px 0.5em 2em rgba(37, 211, 102, 0.25);
+    color: #FBFBFB;
+    border: none;
+    text-align: center;
+    height: 4em;
+    padding: 1em, 0.5em, 1em, 0.5em;
+    width: 100%;
+}
+
+/*Esconde botón de Whatsapp responsive  cuando colapsa el Navbar*/
+@media (min-width: 992px) {
+    .whatsapp-responsive {
+        display: none;
+    }
 }
 
 
+/*HERO*/
+
+/*Título del Hero*/
+.hero-title {
+    font-family: 'Contrail One', cursive;
+    font-weight: 400;
+    font-size: 5em;
+    line-height: 1.25em;
+}
+
+/*Texto del Hero*/
+.hero-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 2em;
+    color: #2D2D2D;
+    margin-bottom: 2em;
+}
+
+/*Botón del Hero*/
+.hero-button {
+    /*Tamaño*/
+    padding: 1em 4em;
+    gap: 0.5em;
+    width: 13em;
+    height: 3.375em;
+    border-radius: 1.5em;
+    /* Color */
+    background-color: #B89869;
+    color: #FBFBFB;
+    /*Fuente*/
+    font-family: 'Lato';
+    font-Weight: 500;
+    font-size: 1.125em;
+    line-height: 1.375em
+}
+
+/*SERVICIOS*/
+
+/*Título de la sección servicios*/
 .servicios-h2 {
     font-family: 'Contrail One', cursive;
     font-weight: 200;
     font-size: 65px;
-    line-height: 60px;
+    line-height: 0.923em;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 0.462em;
+    padding-bottom: 1.538em;
 }
-
-.card {
-    display: flex;
-    align-items: center;
-    margin: 0px 20px;
-    border-radius: 30px;
-    padding: 30px 10px 30px 10px;
-    position: relative;
-    margin-bottom: 80px;
-}
-
-.card-img-top {
-   width: 60px;
-   position: absolute;
-   top: -30px;
- 
-}
-
-.card-title {
-    font-family: 'Contrail One', cursive;
-    font-weight: 200;
-    font-size: 30px;
-    line-height: 50px;
-    text-align: center;
-    
-}
-
-.card-text {
-    font-family: 'Lato';
-    font-size: 16px;
-    text-align: center;
-}
-
 
 .servicios-title {
     width: 100%;
- }
+}
+
+/*Tarjetas*/
+.card {
+    display: flex;
+    align-items: center;
+    margin: 0 1.25em;
+    border-radius: 1.875em;
+    padding: 1.875em 0.625em 1.875em 0.625em;
+    position: relative;
+    margin-bottom: 5em;
+    box-shadow: 0.25em 0.25em 1.5em rgba(45, 45, 45, 0.25);
+    height: 80%;
+}
+
+/*Iconos de las tarjetas*/
+.card-img-top {
+    width: 3.75em;
+    position: absolute;
+    top: -1.875em;
+
+}
+
+/*Títulos de las tarjetas*/
+.card-title {
+    font-family: 'Contrail One', cursive;
+    font-weight: 200;
+    font-size: 1.875em;
+    line-height: 1.5em;
+    text-align: center;
+
+}
+
+/*Textos de las tarjetas*/
+.card-text {
+    font-family: 'Lato';
+    font-size: 1em;
+    line-height: 1.375em;
+    text-align: center;
+}
+
+
+/* ACERCA DE MÍ*/
+
+/*Título*/
+.about-title {
+    /* Tamaño*/
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 1.25em;
+    /* color y sombras*/
+    color: #2D2D2D;
+}
+
+/*Texto*/
+.about-text {
+    /* Fuente*/
+    font-family: 'Lato';
+    font-weight: lighter;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    /* color y sombras*/
+    color: #2D2D2D;
+}
+
+/* Text align responsive*/
+@media (max-width: 992px) {
+    .about-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-text {
+        text-align: justify;
+    }
+}
+
+/*PLANES*/
+
+/*Título Planes*/
+.planes-title {
+    /*Fuente*/
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 1.25em;
+    text-align: center;
+    /*color*/
+    color: #2D2D2D;
+}
+
+/*Texto Planes*/
+.planes-text {
+    /*Fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: center;
+    /*color*/
+    color: #2D2D2D;
+    /*márgenes*/
+    margin-bottom: 4em;
+}
+
+/* Fila de tarjetas- se modifica clase bootstrap*/
+.row-mod {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .card-size {
+        height: 35em;
+        width: 95%;
+    }
+
+    /*Largo del texto*/
+    .card-text-height {
+        min-height: 20em;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-size {
+        min-height: 30em;
+    }
+
+    .card-text-height {
+        min-height: 18em;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-size {
+        min-height: 25em;
+    }
+
+    .card-text-height {
+        min-height: 12em;
+    }
+}
+
+/* Subtítulo de tarjeta planes*/
+.plan-card-subt {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.items {
+    /* display */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+/* ícono check tarjeta planes */
+.plan-card-icon {
+    /* color*/
+    color: #B89869;
+    /* fuente*/
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 17px;
+}
+
+/* item de la tarjeta planes*/
+.plan-card-item {
+    /* display */
+    margin: 1em 0 2em 0;
+    gap: 2em;
+    /* fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+/* Ícono check Plan Premium (Tiene color diferente)*/
+.plan-premium-icon {
+    font-size: 1.5em;
+    color: #FBFBFB;
+}
+
+/* Tarjeta Plan Premium (Tiene color diferente)*/
+.plan-premium {
+    /* colores*/
+    background-color: #B89869;
+    color: #FBFBFB;
+}
+
+/*Botón de las tarjetas*/
+.plan-button {
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    /* Forma*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.75em 1em;
+    gap: 0.1em;
+    border-radius: 1.5em;
+    border: none;
+    /* Borde y color*/
+    color: #FBFBFB;
+    background-color: #B89869;
+    margin: auto;
+    display: block;
+}
+
+/*Botón del plan premium (Tiene color diferente)*/
+.plan-premium-button {
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    /* Forma*/
+    padding: 0.75em 1em;
+    gap: 0.2em;
+    border-radius: 1.5em;
+    border: none;
+    /* Borde y color*/
+    color: #B89869;
+    background-color: #FBFBFB;
+    margin: auto;
+    display: block;
+}
+
+
+/* CONTACTO*/
+
+/*Título*/
+
+.contacto-title {
+    /* Tamaño*/
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 1.25em;
+    /* color y sombras*/
+    color: #2D2D2D;
+}
+
+/*Texto*/
+.contacto-text {
+    /* Fuente*/
+    font-family: 'Lato';
+    font-weight: lighter;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    /* color y sombras*/
+    color: #2D2D2D;
+}
+
+/*Iconos*/
+.redes-sociales {
+ width: 5.5em;
+ margin: 0.5em;
+}
+
+
+
+/* Text align responsive*/
+@media (max-width: 992px) {
+.redes {
+    justify-content: center;
+    margin: 1em;
+}
+
+    .contacto-text {
+        text-align: center;
+    }
+
+    .contacto-title {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    .contacto-text {
+        text-align: justify;
+    }
+}
+
+
+/* FOOTER*/
+.footer-text {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+.footer-img {
+    width: 8em;
+    margin: 10px;
+}
