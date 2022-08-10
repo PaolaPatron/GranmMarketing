@@ -1,0 +1,320 @@
+/*VISTA MOBILE*/
+
+@media (max-width:576px) {
+
+    /*Section Hero*/
+    #inicio {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 40px 16px 0px;
+        left: 0px;
+        top: 181px;
+    }
+
+    /*Container general*/
+    .container-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+    }
+
+    /*Titulo*/
+    .hero-title {
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    /*Texto*/
+    .hero-text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: nth($color, 8)
+    }
+
+
+    /*Botón*/
+    .container-button-hero {
+        /* Forma */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 8px;      
+    }
+
+    #hero-button {
+        /* Forma */
+        position: relative;
+        display: block;
+        padding: 13px;
+        width: 207px;
+        height: 54px;
+        border-radius: 24px;          
+        margin-bottom: 40px;
+        /* Fuente */
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        /* Color */
+        color: nth($color, 1);
+        background-color: nth($color, 3);
+    }
+
+    .fa-arrow-right {
+        visibility: hidden;
+        position: absolute;
+        right: 30px;
+        top: 11px;
+        padding: 5px;
+        transition: ease-in-out 0.3s;
+        opacity: 0;
+    }
+
+    #hero-button:hover {
+        background-color: nth($color, 3);
+        color: nth($color, 1);
+        padding-right: 20px;
+        transition: ease-in-out .3s;
+        width: 217px;
+    }
+
+    #hero-button:hover .fa-arrow-right {
+        visibility: visible;
+        position: absolute;
+        right: 25px;
+        opacity: 1;
+        transition: ease-in-out 0.3s;
+    }
+}
+
+/*VISTA TABLET*/
+@media (min-width:577px) {
+
+    /*Section Inicio*/
+    #inicio {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 40px 32px 0px;
+        left: 0px;
+        top: 181px;
+    }
+
+    /*Container general*/
+    .container-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0px 80px;
+        gap: 40px;
+    }
+
+    /*Titulo*/
+    .hero-title {
+        /*Fuente*/
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 90px;
+        text-align: center;
+        /* Color */
+        color: nth($color, 2)
+    }
+
+    /*Texto*/
+    .hero-text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 40px;
+        height: 65px;
+        /* Color */
+        color: nth($color, 8);
+    }
+
+    /*Botón*/
+    .container-button-hero {
+        /* Forma */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 62px;
+        gap: 8px;
+    }
+
+    #hero-button {
+        /* Forma */
+        position: relative;
+        display: block;
+        padding: 13px;
+        width: 207px;
+        height: 54px;
+        border-radius: 24px;
+        margin-bottom: 40px;
+        /* Fuente */
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        /* Color */
+        color: nth($color, 1);
+        background-color: nth($color, 3);
+    }
+
+    .fa-arrow-right {
+        visibility: hidden;
+        position: absolute;
+        right: 30px;
+        top: 11px;
+        padding: 5px;
+        transition: ease-in-out 0.3s;
+        opacity: 0;
+    }
+
+    #hero-button:hover {
+        background-color: nth($color, 3);
+        color: nth($color, 1);
+        padding-right: 20px;
+        transition: ease-in-out .3s;
+        width: 217px;
+    }
+
+    #hero-button:hover .fa-arrow-right {
+        visibility: visible;
+        position: absolute;
+        right: 25px;
+        opacity: 1;
+        transition: ease-in-out 0.3s;
+    }
+}
+
+/*VISTA DESKTOP*/
+@media (min-width:992px) {
+
+    /*Section Inicio*/
+    #inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 120px 0px;
+        left: 0px;
+        top: 93px;
+    }
+
+    /*Container general*/
+    .container-hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+    }
+
+    /*Titulo*/
+    .hero-title {
+        /*Fuente*/
+        font-family: 'Contrail One';
+        font-style: normal;
+        font-weight: 400;
+        max-width: 100%;
+        line-height: 80px;
+        margin-bottom: 15px;
+        font-size: 80px;
+        text-align: left;
+       
+    }
+
+    /*Texto*/
+    .hero-text {
+        /*Fuente*/
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 15px;
+        color: nth($color, 8);
+    }
+
+    /*Botón*/
+    .container-button-hero {
+        /* Forma */
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    #hero-button {
+        /* Forma */
+        position: relative;
+        display: block;
+        padding: 13px;
+        width: 207px;
+        height: 54px;
+        border-radius: 24px;
+        margin-bottom: 0px;
+        /* Fuente */
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        /* Color */
+        color: nth($color, 1);
+        background-color: nth($color, 3);
+    }
+
+    .fa-arrow-right {
+        visibility: hidden;
+        position: absolute;
+        right: 30px;
+        top: 11px;
+        padding: 5px;
+        transition: ease-in-out 0.3s;
+        opacity: 0;
+    }
+
+    #hero-button:hover {
+        background-color: nth($color, 3);
+        color: nth($color, 1);
+        padding-right: 20px;
+        transition: ease-in-out .3s;
+        width: 217px;
+    }
+
+    #hero-button:hover .fa-arrow-right {
+        visibility: visible;
+        position: absolute;
+        right: 25px;
+        opacity: 1;
+        transition: ease-in-out 0.3s;
+    }
+
+
+}

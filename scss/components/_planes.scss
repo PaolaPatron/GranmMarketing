@@ -1,0 +1,174 @@
+/*PLANES*/
+
+/*Título Planes*/
+.planes-title {
+    /*Fuente*/
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 1.25em;
+    text-align: center;
+    /*color*/
+    color: #2D2D2D;
+}
+
+/*Texto Planes*/
+.planes-text {
+    /*Fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: center;
+    /*color*/
+    color: #2D2D2D;
+    /*márgenes*/
+    margin-bottom: 4em;
+}
+
+/* Fila de tarjetas- se modifica clase bootstrap*/
+.row-mod {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .card-size {
+        height: 35em;
+        width: 95%;
+    }
+
+    /*Largo del texto*/
+    .card-text-height {
+        min-height: 20em;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-size {
+        min-height: 30em;
+    }
+
+    .card-text-height {
+        min-height: 18em;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-size {
+        min-height: 25em;
+    }
+
+    .card-text-height {
+        min-height: 12em;
+    }
+}
+
+/* Subtítulo de tarjeta planes*/
+.plan-card-subt {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.items {
+    /* display */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+/* ícono check tarjeta planes */
+.plan-card-icon {
+    /* color*/
+    color: #B89869;
+    /* fuente*/
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 17px;
+}
+
+/* item de la tarjeta planes*/
+.plan-card-item {
+    /* display */
+    margin: 1em 0 2em 0;
+    gap: 2em;
+    /* fuente*/
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+/* Ícono check Plan Premium (Tiene color diferente)*/
+.plan-premium-icon {
+    font-size: 1.5em;
+    color: #FBFBFB;
+}
+
+/* Tarjeta Plan Premium (Tiene color diferente)*/
+.plan-premium {
+    /* colores*/
+    background-color: #B89869;
+    color: #FBFBFB;
+}
+
+/*Botón de las tarjetas*/
+.plan-button {
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    /* Forma*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.75em 1em;
+    gap: 0.1em;
+    border-radius: 1.5em;
+    border: none;
+    /* Borde y color*/
+    color: #FBFBFB;
+    background-color: #B89869;
+    margin: auto;
+    display: block;
+}
+
+/*Botón del plan premium (Tiene color diferente)*/
+.plan-premium-button {
+    /* Fuente */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    /* Forma*/
+    padding: 0.75em 1em;
+    gap: 0.2em;
+    border-radius: 1.5em;
+    border: none;
+    /* Borde y color*/
+    color: #B89869;
+    background-color: #FBFBFB;
+    margin: auto;
+    display: block;
+}

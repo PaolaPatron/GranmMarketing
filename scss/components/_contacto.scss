@@ -1,0 +1,59 @@
+/* CONTACTO*/
+
+/*Título*/
+
+.contacto-title {
+    /* Tamaño*/
+    font-family: 'Contrail One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 1.25em;
+    /* color y sombras*/
+    color: #2D2D2D;
+}
+
+/*Texto*/
+.contacto-text {
+    /* Fuente*/
+    font-family: 'Lato';
+    font-weight: lighter;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    /* color y sombras*/
+    color: #2D2D2D;
+}
+
+/*Iconos*/
+.redes-sociales {
+ width: 5.5em;
+ margin: 0.5em;
+}
+
+.contacto-img {
+    border-radius: 20px;
+}
+
+/* Text align responsive*/
+@media (max-width: 992px) {
+.redes {
+    justify-content: center;
+    margin: 1em;
+}
+
+    .contacto-text {
+        text-align: center;
+    }
+
+    .contacto-title {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    .contacto-text {
+        text-align: justify;
+    }
+}
+
+

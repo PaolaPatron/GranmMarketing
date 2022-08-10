@@ -16,52 +16,57 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!--CSS -->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
     <title> GranmMarketing</title>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
+    <header class="header" id="navbar_top">
         <!-- Botón Whatsapp Responsive -->
-        <button class="whatsapp-responsive">
+        <button class="whatsapp-responsive" id="boton-top">
             <img src="./icons/Wp-button.svg" alt="whatsapp">
             </span> ¿Tenés una consulta? ¡Escribime!</span>
         </button>
+
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg nav-bg">
+        <nav class="navbar navbar-expand-lg nav-bg" >
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#"><img src="./images/logo.png" class="img-logo" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"> </span>
                 </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse nav-cont" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-list">
                         <!-- Inicio-->
                         <li class="nav-item">
                             <a class="nav-link link-style" aria-current="page" href="#inicio">Inicio</a>
                         </li>
+                        <hr class="line">
                         <!-- Servicios -->
                         <li class="nav-item">
                             <a class="nav-link link-style" href="#servicios">Servicios</a>
                         </li>
+                        <hr class="line">
                         <!-- Acerca de-->
                         <li class="nav-item">
                             <a class="nav-link link-style" href="#about">Acerca de</a>
                         </li>
+                        <hr class="line">
                         <!-- Planes -->
                         <li class="nav-item">
                             <a class="nav-link link-style" href="#planes">Planes</a>
                         </li>
+                        <hr class="line">
                         <!-- Contacto-->
                         <li class="nav-item">
                             <a class="nav-link link-style" href="#contacto">Contacto</a>
+
                         </li>
                     </ul>
                 </div>
@@ -73,36 +78,41 @@
                     </span>¿Tenés una consulta? ¡Escribime!</button>
             </span>
         </nav>
+
     </header>
     <!-- HERO (INICIO) -->
-    <div class="container col-xxl-12 px-4 py-5" id="inicio">
-        <div class="row flex-lg-row g-5 py-5">
-            <div class="col-lg-6 text-center text-lg-start">
-                <!-- Título Hero-->
-                <h1 class="display-4 lh-1 mt-2 hero-title">Hacé crecer tu marca en redes</h1>
-                <!-- Texto Hero -->
-                <p class="hero-text">Sin perder su esencia, con el asesoramiento y estrategias adecuadas.
-                    Demos
-                    a
-                    conocer tu marca al
-                    mundo
-                    juntos.</p>
-                <!-- Botón del Hero-->
-                <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start mb-4 mb-lg-3">
-                    <a class="btn hero-button btn-lg px-4 me-md-2" href="#planes">Ver Planes</a>
+    <section id="inicio">
+        <div class="container-hero">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <!-- Título Hero-->
+                    <h1 class="hero-title">Hacé crecer tu marca en redes</h1>
+                    <!-- Texto Hero -->
+                    <p class="hero-text">Sin perder su esencia, con el asesoramiento y estrategias adecuadas.
+                        Demos
+                        a
+                        conocer tu marca al
+                        mundo
+                        juntos.</p>
+                    <!-- Botón del Hero-->
+                    <div class="container-button-hero">
+                        <a class="btn" id="hero-button" href="#planes">Ver Planes<i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Imagen Hero-->
+                <div class="col-lg-5">
+                    <img src="./images/img-hero.png" class="d-block mx-sm-auto img-fluid"
+                        alt="community manager señalando">
                 </div>
             </div>
-            <!-- Imagen Hero-->
-            <div class="col-12 col-sm-12 col-lg-6">
-                <img src="./images/img-hero.png" class="d-block mx-sm-auto img-fluid" alt="persona señalando">
-            </div>
         </div>
-    </div>
+    </section>
     <!--SERVICIOS -->
-    <div class="servicios" id="servicios">
+    <main id="servicios">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-8 servicios-title">
+                <div class="col-sm-12 col-md-12 servicios-title">
                     <!--Titulo Servicios -->
                     <h2 class="servicios-h2">¿Cuáles son mis servicios?</h2>
                 </div>
@@ -157,33 +167,41 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <!-- ACERCA DE MÍ-->
-    <div class="container col-xxl-12 px-4 py-5" id="about">
-        <div class="row flex-lg-row-reverse g-5 py-5">
-            <!-- Texto Acerca de Mí-->
-            <div class="col-lg-6">
-                <!-- Título-->
-                <h2 class="about-title text-center text-lg-start">Acerca de mí</h2>
-                <!-- Texto -->
-                <p class="about-text">Mi nombre es Graciela y tengo 60 años. Me dediqué casi toda mi vida a la
-                    decoración, y en último tiempo haciendo voluntariado en una organización sin fines de lucro donde
-                    brindo talleres sobre salud mental. <br>
-                    Me considero una persona bastante curiosa que le gusta formarse y aprender cosas nuevas
-                    constantemente, por lo que al comenzar publicitando la organización en redes sociales encontré una
-                    pasión por el Marketing Digital y de ahí decidí formarme profesionalmente en el área. <br>
-                    Profesionalmente soy Community Manager y Paid Media egresada de Coderhouse, donde de manera bastante
-                    cercana y con atención al detalle brindo servicios de publicidad y asesoramiento para que con el
-                    plan adecuado tu marca pueda crecer sin perder su esencia, que considero muy importante.</p>
-            </div>
-            <!-- Imagen Acerca de Mí-->
-            <div class="col-12 col-sm-12 col-lg-6">
-                <img src="./images/about.png" class="d-block mx-sm-auto img-fluid" alt="persona señalandose">
+    <section id="about">
+        <div class="container">
+            <div class="row flex-lg-row-reverse">
+                <!-- Texto Acerca de Mí-->
+                <div class="col-lg-6">
+                    <!-- Título-->
+                    <h2 class="about-title text-center text-lg-start">Acerca de mí</h2>
+                    <!-- Texto -->
+                    <p class="about-text">Mi nombre es Graciela y tengo 60 años. Me dediqué casi toda mi vida a la
+                        decoración, y en último tiempo haciendo voluntariado en una organización sin fines de lucro
+                        donde
+                        brindo talleres sobre salud mental. <br>
+                    <p class="about-text">Me considero una persona bastante curiosa que le gusta formarse y aprender
+                        cosas nuevas
+                        constantemente, por lo que al comenzar publicitando la organización en redes sociales encontré
+                        una
+                        pasión por el Marketing Digital y de ahí decidí formarme profesionalmente en el área. </p>
+                    <p class="about-text">Profesionalmente soy Community Manager y Paid Media egresada de Coderhouse,
+                        donde de manera
+                        bastante
+                        cercana y con atención al detalle brindo servicios de publicidad y asesoramiento para que con el
+                        plan adecuado tu marca pueda crecer sin perder su esencia, que considero muy importante.</p>
+                </div>
+                <!-- Imagen Acerca de Mí-->
+                <div class="col-lg-6">
+                    <img src="./images/about.png" class="d-sm-block mx-sm-auto img-fluid img-about"
+                        alt="community-manager señalandose">
+                </div>
             </div>
         </div>
-    </div>
-    <!--PLANES -->
-    <div id="planes">
+    </section>
+    <!-- PLANES -->
+    <section id="planes">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-8">
@@ -206,7 +224,7 @@
                             <h5 class="card-title">Básico</h5>
                             <div class="card-text-height">
                                 <h6 class="plan-card-subt">Plan para iniciar, con un alcance estable en redes.</h6>
-                                
+
                                 <p class="plan-card-item"> <i class="fa-solid fa-check plan-card-icon"></i> 12 posteos
                                     mensuales
                                     en 2
@@ -296,7 +314,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--CONTACTO-->
     <div id="contacto">
         <div class="container col-xxl-12 px-4 py-5" id="contacto1">
@@ -306,19 +324,19 @@
                     <!-- Título-->
                     <h2 class="contacto-title text-center text-lg-start">¿Tenés dudas? ¡Contáctame!</h2>
                     <!-- Texto -->
-                    <p class="contacto-text">Seguime en mis redes sociales para conocer mis últimos contenidos. 
+                    <p class="contacto-text">Seguime en mis redes sociales para conocer mis últimos contenidos.
                         No esperes más ¡hagamos crecer tu marca!</p>
                     <!-- Redes Sociales -->
                     <div class="row redes">
-                    <img class="col-lg-1 redes-sociales" src="./icons/instagram.svg" alt="">
-                    <img class="col-lg-1 redes-sociales" src="./icons/facebook.svg" alt="">
-                    <img class="col-lg-1 redes-sociales" src="./icons/linkedin.svg" alt="">
-                    <img class="col-lg-1 redes-sociales" src="./icons/behance.svg" alt="">
+                        <img class="col-lg-1 redes-sociales" src="./icons/instagram.svg" alt="">
+                        <img class="col-lg-1 redes-sociales" src="./icons/facebook.svg" alt="">
+                        <img class="col-lg-1 redes-sociales" src="./icons/linkedin.svg" alt="">
+                        <img class="col-lg-1 redes-sociales" src="./icons/behance.svg" alt="">
                     </div>
                 </div>
                 <!-- Imagen Contacto-->
                 <div class="col-12 col-sm-12 col-lg-6">
-                    <img src="./images/contact.png" class="d-block mx-sm-auto img-fluid" alt="persona señalandose">
+                    <img src="./images/contact.png" class="d-block mx-sm-auto img-fluid contacto-img" alt="persona señalandose">
                 </div>
             </div>
         </div>
@@ -326,15 +344,18 @@
 
     <!--FOOTER-->
     <footer>
-            <div class="footer container col-xs-12">
-                <div class="row justify-content-center">
+        <div class="footer container col-xs-12">
+            <div class="row justify-content-center">
                 <img src="./images/logo.svg" alt="" class="footer-img">
-                <p class="footer-text justify-content-center">GranmMarketing 2022<br>Todos los derechos reservados</p>   
-            </div>                 
+                <p class="footer-text justify-content-center">GranmMarketing 2022<br>Todos los derechos reservados</p>
             </div>
+        </div>
     </footer>
 
 
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
